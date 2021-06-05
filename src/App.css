@@ -1,0 +1,298 @@
+/**********
+  ** Style Structure
+    1. Reset CSS
+    2. Main tags (html, body, basic concepts)
+    3. Header Layout
+    4. Tags Layout
+    5. Cocktail-list Layout
+    6. Material-conrainter
+    
+    . Mobile Compatibility
+
+
+    ** Font: 
+      Header: 
+        Font-Family: 'Permanent Marker', Cursive;
+        Font-Size: 55px;
+    
+      Text: 
+        Font-Family: 'Overpass', Sans-Serif;
+        Font-Size: 17px;
+
+    ** Color: 
+      header: 
+        #f7a440, #e1701a
+
+**********/
+
+/********** 1. Reset CSS **********/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/********** 1. Reset CSS **********/
+
+/********** 2. Main tags (html, body, basic concepts) **********/
+html {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+/********** 2. Main tags (html, body, basic concepts) **********/
+
+
+/********** 3. Header Layout **********/
+header {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  vertical-align: center; 
+  justify-content: center; 
+  align-items: center;
+  cursor: pointer;
+}
+
+header p {
+  display: flex;
+  font-family: 'Permanent Marker', Cursive;
+  margin-left: 25px;
+  font-size: 5em;
+  color: #f7a440;
+  text-transform: uppercase;
+} 
+
+header p:last-child{
+  text-indent: 2em;
+  color: #e1701a;
+}
+
+header img {
+  width: 200px;
+}
+
+header:hover p {
+  color: purple;
+}
+
+/********** 3. Header Layout **********/
+
+/********** 4. Tags Layout **********/
+.tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 75%;
+}
+
+.tags .tag {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-family: 'Overpass', Sans-Serif;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #e1701a;
+  margin: 10px 10px 0 0;
+  padding: 8px 22px 8px 16px;
+  border-radius: 20px;
+}
+
+.tags .tag i {
+  margin-right: 5px;
+  color: purple;
+}
+
+/********** 4. Tags Layout **********/
+
+/********** 5. Cocktail List **********/
+.cocktails-list {
+  margin-top: 75px;
+  width: 75%;
+  flex-wrap: wrap;
+}
+
+.cocktail {
+  float: left;
+  display: inline;
+  text-align: center;
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  border: 2px solid #f7a440;
+  margin: 0 25px 25px 0;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.cocktail .cocktail-preview {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cocktail h2, .cocktail li {
+  font-family: 'Overpass', Sans-Serif;
+}
+
+.cocktail h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 0;
+  background-color: #e1701a;
+  margin-bottom: 10px;
+}
+
+.cocktail ul {
+
+}
+
+.cocktail li {
+  font-size: 1em;
+  display: inline;
+  background-color: #98fb98;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  
+}
+
+/********** 5. Cocktail List **********/
+
+/********** 6. Cocktail List **********/
+.materials {
+  width: 100%;
+  display: flex;
+  flex-direction: column
+}
+
+.material-container {
+  margin: 50px 0;
+  background: url('https://images.pexels.com/photos/5946676/pexels-photo-5946676.jpeg') no-repeat center top fixed; 
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: center;
+  text-align: center;
+  align-content: center;
+  width: 100%;
+  height: 250px;
+}
+
+.material-container .material-header {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 16px 20px;
+  border-radius: 20px;
+  margin: 0 auto;
+  color: white;
+  background-color: #e1701a;
+  font-family: 'Overpass', Sans-Serif;
+  font-weight: bold;
+  font-size: 3em;
+  text-transform: capitalize;
+  letter-spacing: 2.5px;
+}
+
+.material-list {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.material-list li {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #98fb98;
+  color: purple;
+  font-family: 'Overpass', Sans-Serif;
+  font-size: 1.1em;
+}
+
+.recipe {
+  display: flex;
+  justify-content: center;
+  margin: 1% auto;
+  width: 80%;
+  font-family: 'Overpass', Sans-Serif;
+  font-size: 1.2em;
+  letter-spacing: 0.3px;
+  background-color:  #98fb98;
+  color: purple;
+  padding: 10px;
+}
+
+
+
+
+
+/********** 6. Cocktail List **********/
+
+/********** last. Mobile Compatibility **********/
+@media screen and (min-width: 800px) {
+  /* Desktop styles go here */
+}
+/********** last. Mobile Compatibility **********/
