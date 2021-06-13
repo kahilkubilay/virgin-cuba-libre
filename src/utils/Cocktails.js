@@ -1,3 +1,52 @@
+// let allCocktail = {};
+
+// var Airtable = require('airtable');
+// var base = new Airtable({ apiKey: 'keySukFkhBF2vtuT7' })
+//     .base('appwBcx85bj9Itozu');
+
+// const table = base('Design projects');
+// const getRecords = async () => {
+//     const records = await table.select().firstPage();
+
+    
+    
+    
+    
+    // allCocktail = records.map((detail, index) => {
+    //     let cocktail = detail.fields || {};
+
+    //     return {
+    //         id: cocktail.id || '',
+    //         name: cocktail.name || '',
+    //         image: (cocktail.images[0] || '').url || '',
+    //         materials: cocktail.materials || '',
+    //         reciper: cocktail.reciper || '',
+    //         sense: cocktail.sense || [],
+    //     }
+    // });
+
+//     // console.warn('yeaaaaahhhhh');
+//     // console.warn('yeaaaaahhhhh');
+//     // console.warn('yeaaaaahhhhh');
+
+//     //console.log(allCocktail);
+
+
+
+    
+// }
+
+// getRecords();
+
+
+// setTimeout(function() {
+//     getRecords();
+// }, 5000)
+
+
+
+
+
 const Cocktails = [{
         id: '1',
         name: 'mojito',
@@ -50,4 +99,12 @@ const Cocktails = [{
     }
 ];
 
+// console.log(Cocktails);
+// console.log(allCocktail);
+
+// setTimeout(function() {
+//     console.log(allCocktail);
+// }, 1000)
+
 export default Cocktails;
+// export default allCocktail;

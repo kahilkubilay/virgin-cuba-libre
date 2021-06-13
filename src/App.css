@@ -97,7 +97,7 @@ a {
 
 /********** 3. Header Layout **********/
 header {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   vertical-align: center; 
@@ -110,7 +110,7 @@ header p {
   display: flex;
   font-family: 'Permanent Marker', Cursive;
   margin-left: 25px;
-  font-size: 5em;
+  font-size: 3em;
   color: #f7a440;
   text-transform: uppercase;
 } 
@@ -121,7 +121,7 @@ header p:last-child{
 }
 
 header img {
-  width: 200px;
+  width: 120px;
 }
 
 header:hover p {
@@ -136,7 +136,7 @@ header:hover p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 25px;
   width: 75%;
 }
 
@@ -162,9 +162,12 @@ header:hover p {
 
 /********** 5. Cocktail List **********/
 .cocktails-list {
-  margin-top: 75px;
   width: 75%;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 25px auto;
+  /* border: 3px solid orangered; */
 }
 
 .cocktail {
@@ -200,9 +203,9 @@ header:hover p {
   margin-bottom: 10px;
 }
 
-.cocktail ul {
+/* .cocktail ul {
 
-}
+} */
 
 .cocktail li {
   font-size: 1em;
@@ -224,8 +227,8 @@ header:hover p {
 }
 
 .material-container {
-  margin: 50px 0;
-  background: url('https://images.pexels.com/photos/5946676/pexels-photo-5946676.jpeg') no-repeat center top fixed; 
+  margin: 25px auto;
+  background: no-repeat center center ; 
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -233,8 +236,10 @@ header:hover p {
   vertical-align: center;
   text-align: center;
   align-content: center;
-  width: 100%;
-  height: 250px;
+  width: 75%;
+  height: 500px;
+  border-radius: 10px;
+  border: 2px solid #f7a440;
 }
 
 .material-container .material-header {
@@ -283,11 +288,8 @@ header:hover p {
   background-color:  #98fb98;
   color: purple;
   padding: 10px;
+  text-indent: 50px;
 }
-
-
-
-
 
 /********** 6. Cocktail List **********/
 
